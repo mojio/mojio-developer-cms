@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "000_vehicle_observers.js",
+  "sourceRoot": "",
+  "sources": [
+    "000_vehicle_observers.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,CAAA;IACE,SAAA,EAAW,gBADb;IAEE,IAAA,EAAM;MACJ,UAAA,EAAY,KADR;MAEJ,QAAA,EAAU,0EAFN;KAFR;GAAA;AAAA"
+}
