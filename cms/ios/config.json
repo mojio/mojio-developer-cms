@@ -1,0 +1,12 @@
+{
+    "order":0,
+    "icon": "fa-file-o",
+    "status": "expand",
+    "description":"Description",
+    "breadcrumbs":true,
+    "leftMenu":{
+        "viewMode": "treeview",
+        "source": "root"
+    }
+
+}
