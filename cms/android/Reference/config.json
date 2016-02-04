@@ -1,0 +1,10 @@
+{
+    "config": "../.common/Reference",
+    "relativePath": "~/../../.common/Reference",
+    "templateURI":"template.md",
+    "templateType":"markdown",
+    "icon": "fa-file-o",
+    "data":{
+        "title":"reference"
+    }
+}

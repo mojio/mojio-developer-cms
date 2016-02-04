@@ -1,0 +1,16 @@
+{
+    "config": "../../.common/Guide/Access Control",
+    "relativePath": "~/../../../.common/Guide/Access Control",
+    "templateURI": "template.jade",
+    "templateType": "jade",
+    "icon": "fa-tablet",
+    "data": {
+        "technology": "Android",
+        "language": "Java",
+        "list":[
+            {"title":"title 1"},
+            {"title":"title 2"},
+            {"title":"title 3"}
+        ]
+    }
+}

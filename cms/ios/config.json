@@ -1,12 +1,13 @@
 {
-    "order":0,
+    "config": ".common",
+    "relativePath": "~/../.common",
+    "order": 0,
     "icon": "fa-file-o",
-    "status": "expand",
-    "description":"Description",
-    "breadcrumbs":true,
-    "leftMenu":{
-        "viewMode": "treeview",
-        "source": "root"
+    "pic":"cms/.img/ios.png",
+    "title": "iOS",
+    "description": "Description",
+    "data": {
+        "technology": "iOS",
+        "language": "Swift"
     }
-
 }

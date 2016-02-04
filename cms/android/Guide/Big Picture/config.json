@@ -1,0 +1,12 @@
+{
+    "config": "../../.common/Guide/Big Picture",
+    "relativePath": "~/../../../.common/Guide/Big Picture",
+    "templateURI": "template.jade",
+    "templateType": "jade",
+    "icon": "fa-tablet",
+    "data": {
+        "technology": "Android",
+        "language": "Java"
+    }
+}
+

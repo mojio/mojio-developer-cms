@@ -1,0 +1,14 @@
+{
+    "order":0,
+    "icon": "fa-file",
+    "pic":"cms/.img/javascript.png",
+    "title":"java-server",
+    "status": "expand",
+    "description":"Description",
+    "breadcrumbs":true,
+    "leftMenu":{
+        "viewMode": "treeview",
+        "source": "root",
+        "columns":"4"
+    }
+}

@@ -23,8 +23,8 @@ This README would normally document whatever steps are necessary to get your app
     "breadcrumbs":true, // boolean , show/hide breadcrumbs
 
     "leftMenu":{
-        "viewMode": "none", // [none] [list] [treeview]
-        "source": "children" // [childred] [root] [level]
+        "viewMode": "none", // [none] [list] [treeview] [tile]
+        "source": "children" // [children] [root] [level]
     },
     "mainMenu":{
         "viewMode": "none" // [none] [list] [treeview] [icon]

@@ -1,0 +1,12 @@
+{
+    "config": "../../../.common/Guide/Big Picture/Making Money",
+    "relativePath": "~/../../../../.common/Guide/Big Picture/Making Money",
+    "templateURI": "template.jade",
+    "templateType": "jade",
+    "icon": "fa-tablet",
+    "data": {
+        "technology": "Android",
+        "language": "Java"
+    }
+}
+

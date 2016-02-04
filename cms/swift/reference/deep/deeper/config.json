@@ -1,0 +1,18 @@
+{
+    "order":0,
+    "icon": "fa-file-o",
+    "title": "deeper",
+    "status": "expand",
+    "description":"Introduction to iOS programming",
+    "breadcrumbs":true,
+    "templateURI":"~/template.md",
+    "templateType":"markdown",
+    "data":{
+        "title":"Pooya"
+    },
+    "leftMenu":{
+        "viewMode": "treeview",
+        "source": "1",
+        "columns":"4"
+    }
+}

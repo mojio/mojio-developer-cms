@@ -1,0 +1,18 @@
+{
+    "order":0,
+    "icon": "fa-file-o",
+    "title": "Scenarios",
+    "status": "collapse",
+    "description":"Introduction to iOS programming",
+    "breadcrumbs":true,
+    "templateURI":"~/template.md",
+    "templateType":"markdown",
+    "data":{
+        "title":"Pooya"
+    },
+    "leftMenu":{
+        "viewMode": "none",
+        "source": "parent",
+        "columns":"4"
+    }
+}

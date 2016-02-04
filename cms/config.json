@@ -1,0 +1,23 @@
+{
+    "order":0,
+    "icon": "fa-file-o",
+    "status": "collapse",
+    "description":"Description",
+    "breadcrumbs":true,
+    "templateURI":"~/template.md",
+    "templateType":"markdown",
+    "leftMenu":{
+        "menuClass":"",
+        "menuNodeClass":"bg-gray-lighter m-sm",
+
+        "viewMode": "tile",
+        "source": "root",
+        "columns":"4",
+        "offset":"4",
+        "subColumns":"3"
+    },
+    "main":{
+        "columns":"12"
+    }
+}
+

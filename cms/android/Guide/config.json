@@ -1,0 +1,16 @@
+{
+    "config": "../.common/Guide",
+    "relativePath": "~/../../.common/Guide",
+    "templateURI":"template.jade",
+    "templateType":"jade",
+    "icon": "fa-file-o",
+    "data":{
+        "technology":"android",
+        "language":"java",
+        "list":[
+            {"title":"title 1"},
+            {"title":"title 2"},
+            {"title":"title 3"}
+        ]
+    }
+}

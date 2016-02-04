@@ -1,0 +1,15 @@
+{
+    "config": "../.common/Samples",
+    "relativePath": "~/../../.common/Samples",
+    "templateURI":"template.jade",
+    "templateType":"jade",
+    "icon": "fa-file-o",
+    "data":{
+        "title":"Samples",
+        "list":[
+            {"title":"title 1"},
+            {"title":"title 2"},
+            {"title":"title 3"}
+        ]
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "order":0,
+    "icon": "fa-file-o",
+    "title": "deeper 2",
+    "status": "expand",
+    "description":"Introduction to iOS programming",
+    "breadcrumbs":true,
+    "templateURI":"~/template.jade",
+    "templateType":"jade",
+    "data":{
+        "title":"Pooya"
+    },
+    "leftMenu":{
+        "viewMode": "list",
+        "source": "parent",
+        "columns":"4"
+    },
+
+    "MoreMenu1":{
+        "viewMode": "treeview",
+        "source": "2"
+    },
+
+    "MoreMenu2":{
+        "viewMode": "treeview",
+        "source": "1"
+    },
+
+    "MoreMenu3":{
+        "viewMode": "treeview",
+        "source": "2"
+    },
+
+    "MoreMenu4":{
+        "viewMode": "treeview",
+        "source": "3"
+    }
+
+}
