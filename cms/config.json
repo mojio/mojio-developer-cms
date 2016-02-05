@@ -2,7 +2,7 @@
     "order":0,
     "icon": "fa-file-o",
     "status": "collapse",
-    "description":"Description",
+    "description":"Introduction",
     "breadcrumbs":true,
     "templateURI":"~/template.md",
     "templateType":"markdown",

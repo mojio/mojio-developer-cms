@@ -1,0 +1,8 @@
+{
+  "order": 0,
+  "icon": "fa-file-o",
+  "title": "Vehicle Simulator",
+  "description": "The Vehicle Simulator",
+  "templateURI": "~/template.md",
+  "templateType": "markdown"
+}
