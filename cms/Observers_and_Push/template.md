@@ -34,9 +34,9 @@ To play around with our Push API check out our [swagger documentation](https://p
 
 **Fields**: The Fields property specifies what fields of the entity will be broadcast when a change occurs. When creating or updating an Observer passing in an empty array will default to all fields the user has permission for. If an Observer's Fields property is set to null or an empty array it will automatically broadcast all of the entity's fields.
 
-**Transport**: The transport is not a required field when creating an Observer, but without it the Observer won't do anything! There are a number of different types of transports and each requires a unique set of properties. Each observer should only have one transport. If defaults  have been set for a specific transport type they will automatically copied over to the transport.
+**[Transport](/Transport/template.md)**: The transport is not a required field when creating an Observer, but without it the Observer won't do anything! There are a number of different types of transports and each requires a unique set of properties. Each observer should only have one transport. If defaults  have been set for a specific transport type they will automatically copied over to the transport.
 
-**It should be noted that all fields that are not specified on the transport will be filled with the default values if they are available. So required fields are not required if that value has been specified in the default transport. (LINK to defaults doc)
+**It should be noted that all fields that are not specified on the transport will be filled with the default values if they are available. So required fields are not required if that value has been specified in the [default transport](/Defaults/template.md). 
 
 Transport Types:
 
@@ -49,7 +49,7 @@ Transport Types:
 - SignalR
 
    
-**Conditions**: There are 4 types of conditions that can limit the behavior of an Observer. An Observer can have up to 4 Conditions, one of each type. If none of these are set the Observer will broadcast a message anytime the entity changes in any way.
+**[Conditions](/Conditions/template.md)**: There are 4 types of conditions that can limit the behavior of an Observer. An Observer can have up to 4 Conditions, one of each type. If none of these are set the Observer will broadcast a message anytime the entity changes in any way.
 
 Condition Types:
 

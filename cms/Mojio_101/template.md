@@ -5,24 +5,28 @@
 #### The Mojio platform consists of 3 Main entities, Mojios , Vehicles, Trips. ####
 
 * A Mojio installs in a Vehicle
-* A Vehicle generates trips.
-* A Trip is made up of snapshots of the vehicle at different points in time.
+* A Vehicle generates Trips.
+* A Trip is made up of snapshots of a Vehicle at different points in time.
 
 #### There are also Users, Groups... ####
 
 * When a User claims a Mojio they automatically become the owner of that Mojio.
-* The User becomes owner of any vehicles the Mojio is plugged into.
-* When a User starts a Vehicle it creates a Trip, a Trip is tied to a vehicle and owned by the User who owns the vehicle (which is also the owner of the Mojio). 
-* A User can view information about the entities they are the owner of and have access to (More on this later) through Apps created by developers.
-* Groups are a collection of Users
+* The User becomes owner of any Vehicles the Mojio is plugged into.
+* When a User starts a Vehicle it creates a Trip.
+* A Trip is tied to a vehicle and owned by the User who owns the vehicle (which also happens to be the owner of the Mojio). 
+* A User can view information about the entities they are the owner of and have access to through Apps created by developers.
+* Groups are a collection of Users.
 
 #### Sharing and Access: ####
 
-* The Owner of a Vehicle can grant Groups of Users access to their entities
-* Access rules are inherited with Mojios getting them from their owner, Vehicles from the Mojio, and Trips from Vehicles
+* The Owner of an entity can grant Groups of Users access to their entities.
+* Access rules are inherited 
+	* Mojios inherit from their owner
+	* Vehicles inherit from the Mojio
+	* Trips inherit from the Vehicle
 * Access rules are applied on creation so when access is granted to a parent entity, only new children will get those new access rules
-* That means if a Group is granted read all the information about a Vehicle the Group will also be able to read information on any new trips, but not see anything on trips that happened before access was granted.
-
+* If a Group is granted read access to all the information about a Vehicle the Group will also be able to read information about new Trips, but not see anything about Trips that happened before access was granted.
+* See the Permissions and [Access section](../REST_Basics/Access/template.md) for more information.
 
 #### Relationships:  ####
 

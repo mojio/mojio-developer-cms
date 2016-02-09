@@ -30,12 +30,14 @@ The Mojio REST APIs are supported for testing and live data in a single producti
 A complete endpoint is formed by combining the REST verb with the full URI to the resource you are addressing.
 
 To create a complete request, combine the endpoint with the appropriate HTTP headers and your JSON payload. You can try out the REST api here: 
-
-    https://api.moj.io/swagger/
+[https://api.moj.io/swagger/](https://api.moj.io)
 
 And you can try out the Push API here: 
+[https://push.moj.io/swagger/](https://push.moj.io/swagger/)
 
-    https://push.moj.io/swagger/
+Many of the API calls require an authorization header to be included in the request see our [Authorization section](/Authorization/template.md) to find out more.
+
+
 
 ### Routing ###
 
@@ -65,6 +67,4 @@ The Push controllers are:
 
 ### Next steps ###
 
-Check out Creating my First Application to get started...
-
-Or Read up on our OAuth Authorization... 
+Check out [Creating my First Application](Creating_an_Application/template.md) to get started...
