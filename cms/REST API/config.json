@@ -1,8 +1,0 @@
-{
-  "order": 0,
-  "icon": "fa-file-o",
-  "title": "REST API",
-  "description": "The Basics of the REST API",
-  "templateURI": "~/template.md",
-  "templateType": "markdown"
-}

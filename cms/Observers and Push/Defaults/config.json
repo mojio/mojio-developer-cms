@@ -2,8 +2,8 @@
   "order": 0,
   "icon": "fa-file-o",
   "status": "collapse",
-  "title": "Mojio 101: ",
-  "description": "Explaining the Major Mojio Entities",
+  "title": "Defaults",
+  "description": "Observer Transport Defaults",
   "breadcrumbs": true,
   "templateURI": "~/template.md",
   "templateType": "markdown",
@@ -21,4 +21,3 @@
     "columns": "12"
   }
 }
-

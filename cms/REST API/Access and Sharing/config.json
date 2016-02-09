@@ -1,8 +1,0 @@
-{
-  "order": 0,
-  "icon": "fa-file-o",
-  "title": "Access and Sharing",
-  "description": "Introduction to Permissions and Grouping",
-  "templateURI": "~/template.md",
-  "templateType": "markdown"
-}

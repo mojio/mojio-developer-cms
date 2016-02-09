@@ -1,8 +1,0 @@
-{
-  "order": 0,
-  "icon": "fa-file-o",
-  "title": "Domain Models",
-  "description": "Explanation of the entity's domain models",
-  "templateURI": "~/template.md",
-  "templateType": "markdown"
-}
