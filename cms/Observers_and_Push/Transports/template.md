@@ -67,16 +67,15 @@ Saves entity that is broadcast to MongoDB.
 
 **CollectionName**: (Required) the name of the collection to save the entity to.
 
-**Identifier Type**: How to identify the entity within the new Mongo database.
-
-**Options**: Default, Id or Guid
+**Identifier Type**: How to identify the entity within the new Mongo database. Can be Default, Id or Guid.
 
 - **Default**: Creates a new ObjectId to identity the entity for each broadcast. This means if an entity is broadcast more than once it will not be overwritten there will instead be an entry for each state of the entity.
 - **Id**: Uses the MojioId, which is a Guid, to identify the object within the database. This means that an old entry for entity will be overwritten by a new broadcast.
 - **Guid**: Creates a new Guid to identity the entity for each broadcast. This means if an entity is broadcast more than once it will not be overwritten there will instead be an entry for each state of the entity. 
 
 
-### Mqtt ### 
+### Mqtt ###
+Publish Messages to an Mqtt client. 
 
 	"Transport"{
 	   "TransportType": "Mqtt",
@@ -88,20 +87,22 @@ Saves entity that is broadcast to MongoDB.
 	   "Password": "string"
 	}
 
-**HostName**: (Required) The host name.
+**HostName**: (Required) Hostname of the MQTT broker to connect to. 
 
-**Port**: (Required) The port to connect to.
+**Port**: (Required) Port number of the MQTT broker to connect to. 
 
-**ClientId**: (Required)
+**ClientId**: (Required) MQTT client ID to use.
 
-**Topic**: (Required)
+**Topic**: (Optional) The topic to publish to.
 
-**UserName**:
+**UserName**: (Optional) Username used when authenticating to the MQTT broker. 
 
-**Password**:
+**Password**: (Optional) Password used when authenticating to the MQTT broker. 
 
 
 ### SignalR ###
+
+Connect to SignalR and broadcast messages.
 	
 	"Transport"{
 	   "TransportType": "SignalR",
@@ -110,7 +111,7 @@ Saves entity that is broadcast to MongoDB.
 	   "Callback": string
 	}
 
-**ClientId**:
-**HubName**:
-**Callback**:
+**ClientId**: (Required) The Id of the client to connect to.
+**HubName**: (Required) The name of the hub to connect to.
+**Callback**: (Optional) The callback to be used for a response.
 

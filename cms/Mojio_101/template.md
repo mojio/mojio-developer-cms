@@ -26,7 +26,7 @@
 	* Trips inherit from the Vehicle
 * Access rules are applied on creation so when access is granted to a parent entity, only new children will get those new access rules
 * If a Group is granted read access to all the information about a Vehicle the Group will also be able to read information about new Trips, but not see anything about Trips that happened before access was granted.
-* See the Permissions and [Access section](../REST_Basics/Access/template.md) for more information.
+* See the Permissions and [Access section](#/content/cms.REST_Basics.Access) for more information.
 
 #### Relationships:  ####
 

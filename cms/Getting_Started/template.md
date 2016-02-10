@@ -35,7 +35,7 @@ To create a complete request, combine the endpoint with the appropriate HTTP hea
 And you can try out the Push API here: 
 [https://push.moj.io/swagger/](https://push.moj.io/swagger/)
 
-Many of the API calls require an authorization header to be included in the request see our [Authorization section](/Authorization/template.md) to find out more.
+Many of the API calls require an authorization header to be included in the request see our [ Authorization section](#/content/cms.Getting_Started.Authorization) to find out more.
 
 
 
@@ -67,4 +67,4 @@ The Push controllers are:
 
 ### Next steps ###
 
-Check out [Creating my First Application](Creating_an_Application/template.md) to get started...
+Check out [Creating my First Application](#/content/cms.Getting_Started.Creating_an_Application) to get started...
