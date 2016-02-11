@@ -112,6 +112,8 @@ Connect to SignalR and broadcast messages.
 	}
 
 **ClientId**: (Required) The Id of the client to connect to.
+
 **HubName**: (Required) The name of the hub to connect to.
+
 **Callback**: (Optional) The callback to be used for a response.
 
