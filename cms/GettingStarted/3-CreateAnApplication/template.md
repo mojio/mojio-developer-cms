@@ -5,7 +5,7 @@ To start using the API you are going to need to sign up for a Mojio account and 
 
 Browse to our [swagger documentation](https://api.moj.io/swagger).
 
-1. Navigate to the POST v2/apps call.
+1. Navigate to the [POST v2/apps call](https://api.moj.io/swagger/ui/index#!/Apps/CRUD_PostApp).
 1. Click the on/off switch and login or create a Mojio account if you haven't already.
 1. Once you've logged in create a new application by posting to v2/apps.
 1. You can add a name, description and a list of redirect uris which are used in OAuth Authorization.
