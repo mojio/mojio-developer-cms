@@ -2,8 +2,8 @@
   "order": 0,
   "icon": "fa-file-o",
   "status": "collapse",
-  "title": "Welcome to the Mojio Developer Center!",
-  "description": "",
+  "title": "Sharing and Access",
+  "description": " Introduction to Entity Permissions",
   "breadcrumbs": true,
   "templateURI": "~/template.md",
   "templateType": "markdown",
@@ -21,4 +21,3 @@
     "columns": "12"
   }
 }
-
