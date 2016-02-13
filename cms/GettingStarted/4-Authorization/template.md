@@ -4,7 +4,7 @@ Many of the API calls require an authorized user to be associated with the SDK r
 
 Tokens have an expiry date which you are able to set or extend.
 
-Your App ID (Which you can find on your "My Apps" page of [developer.moj.io](https://developer.moj.io/account/apps)) is used with OAuth2 to retrieve the authentication token. So you, the developer, never have to deal directly with Mojio usernames or passwords! You simply have to retrieve and store an authentication token and you are good to make requests to the API. 
+Your App ID (Which you can find by doing GET v2/apps call on the [swagger page](https://api.moj.io/swagger)) is used with OAuth2 to retrieve the authentication token. So you, the developer, never have to deal directly with Mojio usernames or passwords! You simply have to retrieve and store an authentication token and you are good to make requests to the API. 
 
 
 #### User Authentication with OAuth2 ####
@@ -24,9 +24,9 @@ The redirect_uri is a url where the authentication server will return with a tok
 	PRODUCTION AUTHENTICATION SERVER REDIRECT 
 	https://api.moj.io/OAuth2/authorize?response_type=token&client_id=[YOUR_APP_ID]&redirect_uri=[YOUR_REDIRECT_URI]
 
-**IMPORTANT**: You must register your redirect\_uri value in your application's management area (Go to [developer.moj.io](https://developer.moj.io/account/apps), navigate to “My Account” -> “My Apps” -> "Manage", and fill in the redirect URIs field). The redirect URI that you've set in your app settings and the URI you are using in your source code must match exactly (i.e. exact case) and include the scheme, url, port, and query parameters. You can list more than one URI in your app settings by putting them on separate lines. If you do no include the redirect\_uri parameter in your path OAuth will automatically use the first one listed in your apps list of redirect URIs. 
+**IMPORTANT**: You must save your redirect\_uri value in your app (Go to the [swagger page](https://api.moj.io/swagger), and do PUT v2/apps to the redirect URIs field). The redirect URI that you've set in your app settings and the URI you are using in your source code must match exactly (i.e. exact case) and include the scheme, url, port, and query parameters. You can list more than one URI in your app settings by putting them on separate lines. If you do no include the redirect\_uri parameter in your path OAuth will automatically use the first one listed in your apps list of redirect URIs. 
 
-Also note that the api authentication endpoint redirects to our OAuth server so make sure you application (especially if its a mobile application!) can handle redirects. 
+Also note that the API authentication endpoint redirects to our OAuth server so make sure you application (especially if its a mobile application!) can handle redirects. 
 
 On the the page that handles the redirect back from authentication, you must retrieve the authentication token. To do this in JavaScript use:
 

@@ -3,7 +3,7 @@
   "icon": "fa-file-o",
   "status": "collapse",
   "title": "REST API Basics",
-  "description": " Basics of the REST API",
+  "description": " Intro into the REST API",
   "breadcrumbs": true,
   "templateURI": "~/template.md",
   "templateType": "markdown",

@@ -1,4 +1,6 @@
-# Mojio 101 #
+# Mojio 101 
+
+[Purpose: Basic information the entities, the relationships and how it actually works]
 
 ## What is Mojio? ##
  
@@ -26,7 +28,7 @@
 	* Trips inherit from the Vehicle
 * Access rules are applied on creation so when access is granted to a parent entity, only new children will get those new access rules
 * If a Group is granted read access to all the information about a Vehicle the Group will also be able to read information about new Trips, but not see anything about Trips that happened before access was granted.
-* See the Permissions and [Access section](#/content/cms.REST_Basics.Access) for more information.
+* See the Permissions and [Access section](#/content/cms.RESTBasics.Access) for more information.
 
 #### Relationships:  ####
 
@@ -49,6 +51,9 @@ It's easy. Mojio plugs into a vehicle's OnBoard Diagnostic (OBD) port, which is 
 Mojio connects to the Internet through an always-on cellular connection inside the Mojio that is plugged into a vehicle. This allows for a seamless experience and is important because Mojio makes the car the device that is connected to the Internet directly (not a smartphone). Through this always-on connection, among other advantages, you know where a vehicle is at any moment.
 
 #### Where will Mojio be available? ####
-Mojio works in most cars built after 1995 and will connect to select cellular networks as we roll out across the world. Currently, we are available in the US and Canada. For more information on when Mojio will be available in your country, please contact us at info@moj.io
+Mojio works in most cars built after 1995 and will connect to select cellular networks as we roll out across the world. Currently, we are available in the US and Canada. For more information on when Mojio will be available in your country, please contact us at info@moj.io.
 
 
+## Next Steps ##
+
+[Connecting to the Mojio Platform >](#/content/cms.GettingStarted.2-EndPoints)

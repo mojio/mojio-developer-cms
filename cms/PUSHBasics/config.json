@@ -2,8 +2,8 @@
   "order": 0,
   "icon": "fa-file-o",
   "status": "collapse",
-  "title": "Creating an Application",
-  "description": " Guide to Creating an Application",
+  "title": "PUSH API Basics",
+  "description": "Intro into the Push API",
   "breadcrumbs": true,
   "templateURI": "~/template.md",
   "templateType": "markdown",
@@ -21,4 +21,3 @@
     "columns": "12"
   }
 }
-

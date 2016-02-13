@@ -1,4 +1,3 @@
-# REST API Basics#
 
 You can play with the REST API at [https://api.moj.io/swagger](https://api.moj.io/swagger).
 
