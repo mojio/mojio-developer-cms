@@ -1,8 +1,8 @@
 # Observer Transport Defaults #
 
-You can create, update and delete default transports of each type for an application. These defaults will populate the blank fields of Observers on broadcasting. Defaults make it possible to include information such as HostNames in observers without exposing them to other developers and users who have access to the observers themselves.
+You can create, update and delete default transports of each type for an application. These default observers will populate the blank fields of Observers on broadcasting. Defaults make it possible to include information such as HostNames in observers without exposing them to other developers and users who have access to the observers themselves.
 
-All of the fields that can be set on a normal Transport can have a default (See the [Transport documentation](#/content/cms.Observers_and_Push.Transports) for more information). Each transport type can only have one default.
+All of the fields that can be set on a normal Transport can have a default (See the [Transport documentation](#/content/cms.PUSHBasics.Transports) for more information). Each transport type can only have one default.
 
 If a field is not set on an Observer's transport it will automatically look for a default transport for that app and if one is found be set to that of the default.
 

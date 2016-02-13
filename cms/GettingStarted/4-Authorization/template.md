@@ -1,6 +1,5 @@
-## Authorization ##
 
-Many of the API calls require an authorized user to be associated with the SDK requests. After a user has been successfully authenticated against our OAuth2 service,  a Token object will be returned that contains a token id (it looks like a GUID), which must be sent in all subsequent HTTP request headers in the field, for example:
+Many of the API calls require an authorized user to be associated with the SDK requests. After a user has been successfully authenticated against our OAuth2 service, a Token object will be returned that contains a token id (it looks like a GUID), which must be sent in all subsequent HTTP request headers in the field, for example:
 
 	"MojioAPIToken" [Token]
 
@@ -43,7 +42,7 @@ On the the page that handles the redirect back from authentication, you must ret
     
 This token is your authentication token that is used in the header of all subsequent calls. Just include a header key 'MojioAPIToken' with the value of this token as noted above.
 
-Mojio provides a PHP, JavaScript, and C# OAuth2 implementation that you can use in your applications. See Authenticating a Mojio User for more info.
+TODO: Examples
 
 Otherwise, any standard third party OAuth2 client library should work to authenticate against the Mojio API.
 
