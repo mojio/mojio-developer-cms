@@ -4,6 +4,8 @@ There are 4 types of conditions that can limit the behavior of an Observer.
 
 **PropertyChanged**: This condition limits the Observer to only broadcast when the specified property changes.
 
+	PropertyChanged (Required): The property to monitor for change.
+
 For Example:
 	
 	"PropertyChanged": "MilStatus",
@@ -47,7 +49,7 @@ For Example:
 		The property to base the time off of. If nothing is specified this will default to the current UTC time. 
 
     MinDataPoints (Optional):
-		The minimum number of times the entity must satisfy all other conditions before the observer will broadcast.
+		The minimum number of times in a row the entity must satisfy all other conditions before the observer will broadcast.
 
     Delay (Optional):  
 		The amount of time that the condition must be maintained for before it can be broadcast. Delay is represented in JSON as a string of the format "0.00:00:00.0000" where "0.01:35:11.0000" Would be 1 hour 35 minutes and 11 seconds.
@@ -61,15 +63,17 @@ For Example:
 	    "Delay": "0.01:00:00.0000"
 	  },
 
-** This will only Broadcast when the conditions have been met 10 times AND it has been over an hour since the first time the condition passed.
+** This will only Broadcast when the conditions have been met 10 times in a row AND it has been maintained for an hour.
 
 
 **Throttle**: The Throttle condition limits the observer to only broadcast if there has been a certain amount of time since the last successful broadcast of the condition. All changes during the window will be ignored.
 
 You could limit the observer to only broadcast once an hour, or once a day even if the conditions have been satisfied multiple times within that time period.
 
-	TimeProperty: (Optional) The property to base the time off of. If nothing is specified this will default to the current UTC time. 
-	Window: (Required) The amount of time that must have passed before the Observer will broadcast again. Window is represented in JSON as a string of the format "0.00:00:00.0000" where "0.01:35:11.0000" Would be 1 hour 35 minutes and 11 seconds.
+	TimeProperty (Optional):
+		The property to base the time off of. If nothing is specified this will default to the current UTC time. 
+	Window (Required):
+		The amount of time that must have passed before the Observer will broadcast again. Window is represented in JSON as a string of the format "0.00:00:00.0000" where "0.01:35:11.0000" Would be 1 hour 35 minutes and 11 seconds.
 
 For Example: 
 
