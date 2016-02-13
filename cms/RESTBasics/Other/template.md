@@ -3,7 +3,7 @@ You can play with the REST API at [https://api.moj.io/swagger](https://api.moj.i
 
 ### Tagging ###
 
-All resources now have a list of string associated with them called Tags that are embedded into the resource model. Tags can be used to identify resources. To create a tag simply do a POST to v2/{resource}/{id}/tags/{tag}. Where resource is either User, Apps, Vehicles, Groups, Mojios, or Trips, id is the resource's id and tag is the string you would like to add. 
+All resources now have a list of string associated with them called Tags that are embedded into the resource model. Tags can be used to identify resources. To create a tag simply do a POST to v2/{resource}/{id}/tags/{tag}. Where resource is either User, Apps, Vehicles, Groups, Mojios, or Trips.  Id is the resource's id and tag is the string you would like to add. 
 
 For example: This would tag a trip as being business related.
 
@@ -32,7 +32,8 @@ Creating/Updating an image:
 
 	POST/PUT v2/{resource}/{id}/image
 
-Where resource is either Apps, Vehicles, or Users, id is the resource's id and image is a formData parameter
+Where resource is either Apps, Vehicles, or Users, and Id is the Id of the resource and image is a formData parameter.
+
 Images must have a minimum width and height of 400px, and a maximum width and height of 10000px to be uploaded. Images cannot exceed 5mb in size. 
 
 Deleting an image:
