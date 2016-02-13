@@ -1,6 +1,6 @@
 # REST API Basics#
 
-The REST API can be used to create, read, update and delete resources. 
+The [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) API can be used to create, read, update and delete resources. 
 
 You can play with the REST API at [https://api.moj.io/swagger](https://api.moj.io/swagger).
 

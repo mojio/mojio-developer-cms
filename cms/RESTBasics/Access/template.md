@@ -3,8 +3,8 @@ Permissions on the Mojio Platform allows a user to grant groups of users access 
 
 To grant a group of users access to a resource:
 
-1. Create a new group (POST v2/groups/)
-2. Add to the group the user or users you want grant access to (POST v2/groups/{id}/users)
+1. Create a new group ([POST v2/groups/](https://api.moj.io/swagger/ui/index#!/Groups/CRUD_PostGroup))
+2. Add to the group the user or users you want grant access to ([POST v2/groups/{id}/users](https://api.moj.io/swagger/ui/index#!/Groups/CRUD_PostGroupUsers))
 3. Grant the group access to the resource (POST v2/{resource/{id}/permissions}
 
 
@@ -20,9 +20,10 @@ All the major entities have a list of AccessRules on them.  This list of access 
 	   }
 	]
 
-**AccessRule:** Contains a GroupId that corresponds to a Group, and a list of Permissions.
+**AccessRule**: Contains a GroupId that corresponds to a Group, and a list of Permissions.
 
-**Permissions:** Permissions scopes are characterized by a string of the form:  Action:Resource:Property with resource and property being optional (resource is required if property is included).  Action is a flag of enums.   (ex: read:user:firstname  or read,write:user:email or read,write:user) Some actions are a combination of other actions to make granting permissions easier. 
+**Permissions**: Permissions scopes are characterized by a string of the form:  	
+*Action:Resource:Property* with resource and property being optional (resource is required if property is included).  Action is a flag of enums.   (ex: read:user:firstname  or read,write:user:email or read,write:user) Some actions are a combination of other actions to make granting permissions easier. 
 
 **Action:**
 
@@ -80,5 +81,5 @@ This inheritance does not apply to past entities. So if I grant you Read access 
 
 Deleting permissions from a resource removes access to them. (DELETE v2/{resource}/{id}/permissions)
 
-Revoking access does not revoke it for all the children. For example if I change your access to my vehicle from Read to None the trips that were generated while you had Read access will still be viewable, unless I explicitly revoke your access to each one individually. 
+Revoking access does not revoke it for all the children. For example if I change your access to my vehicle from Read to None the trips that were generated while you had Read access will still be view able, unless I explicitly revoke your access to each one individually. 
 
