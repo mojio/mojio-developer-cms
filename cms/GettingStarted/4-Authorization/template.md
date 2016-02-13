@@ -9,11 +9,11 @@ Your App ID (Which you can find by doing GET v2/apps call on the [swagger page](
 
 #### User Authentication with OAuth2 ####
 
-You will need to use OAuth2 to authenticate users. For mobile and website applications, this means redirecting to the Mojio authentication server at https://api.moj.io/OAuth2/authorize with three query parameters:
+You will need to use [OAuth2]("http://www.bubblecode.net/en/2016/01/22/understanding-oauth2/") to authenticate users. For mobile and website applications, this means redirecting to the Mojio authentication server at https://api.moj.io/OAuth2/authorize with three query parameters:
 
-	response_type=token
-    client_id=[your app id]
-    redirect_uri=[your redirect]
+- response_type=token
+- client_id=[your app id]
+- redirect_uri=[your redirect]
 
 the response_type will always be token.
 
@@ -30,17 +30,17 @@ Also note that the API authentication endpoint redirects to our OAuth server so 
 
 On the the page that handles the redirect back from authentication, you must retrieve the authentication token. To do this in JavaScript use:
 
-match = document.location.hash.match(/access_token=([0-9a-f-]{36})/)
-token = !!match && match[1]
+	match = document.location.hash.match(/access_token=([0-9a-f-]{36})/)
+	token = !!match && match[1]
 
 This token is your authentication token that is used in the header of all subsequent calls. Just include a header key 'MojioAPIToken' with the value of this token.
 
 	MojioAPIToken=[TOKEN RETURNED FROM OAUTH2]
 or 
 
-	Authorization = bearer [TOKEN RETURNED FROM OAUTH2]
+	Authorization = Bearer [TOKEN RETURNED FROM OAUTH2]
 
-Mojio provides a PHP, JavaScript, and C# OAuth implementation that you can use in your applications. See Authenticating a Mojio User for more info.
+**TODO: Examples**
 
 Otherwise, any standard third party OAuth2 libraries for browser or mobile should work to authenticate against the Mojio API.
 

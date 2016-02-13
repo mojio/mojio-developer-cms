@@ -12,13 +12,13 @@ For Example:
 
 **Threshold**: The threshold condition limits the Observer to only broadcast when the specified property is above, below, or between the given Min and Max.
 	
-	Property: (Required) The property to check for change. For example Speed will be based off of Speed.BaseValue.
-	Position: (Required) Can be Above, Below, Between
-		Above: Checks if the current value is greater than the Max value, if Max is not provided will check the Min
-		Below: Checks if the current value is less than the Min value, if Min is not provided will check the Max
-		Between: Checks if the current value is less between the Max and the Min value
-	Max: The maximum value
-	Min: The minimum value
+- Property: (Required) The property to check for change. For example Speed will be based off of Speed.BaseValue.
+- Position: (Required) Can be Above, Below, Between
+	- Above: Checks if the current value is greater than the Max value, if Max is not provided will check the Min
+	- Below: Checks if the current value is less than the Min value, if Min is not provided will check the Max
+	- Between: Checks if the current value is less between the Max and the Min value
+- Max: The maximum value
+- Min: The minimum value
 
 The units for Max and Min are those of the BaseUnits,
 
@@ -38,11 +38,10 @@ For Example:
 **Debounce**: The debounce condition limits an observer to only broadcast when a certain number of data points have already been received and/or the condition has been maintained for a certain amount of time.
 
 
-    TimeProperty:(Optional) The property to base the time off of. If nothing is specified this will default to the current UTC time. 
-    MinDataPoints:(Optional) The minimum number of times the entity must satisfy all other conditions before the observer will broadcast
-    Delay: (Optional) the amount of time that the condition must be maintained for before it can be broadcast. Delay is represented in JSON as a string of the format "0.00:00:00.0000" where "0.01:35:11.0000" Would be 1 hour 35 minutes and 11 seconds.
+- TimeProperty:(Optional) The property to base the time off of. If nothing is specified this will default to the current UTC time. 
+- MinDataPoints:(Required) The minimum number of times the entity must satisfy all other conditions before the observer will broadcast
+- Delay: (Required) the amount of time that the condition must be maintained for before it can be broadcast. Delay is represented in JSON as a string of the format "0.00:00:00.0000" where "0.01:35:11.0000" Would be 1 hour 35 minutes and 11 seconds.
 
-** Note at least one of MinDataPoints or Delay is required.
 
 For Example:
 
@@ -57,8 +56,8 @@ For Example:
 
 You could limit the observer to only broadcast once an hour, or once a day even if the conditions have been satisfied multiple times within that time period.
 
-	TimeProperty: (Optional) The property to base the time off of. If nothing is specified this will default to the current UTC time. 
-	Window: (Required) The amount of time that must have passed before the Observer will broadcast again. Window is represented in JSON as a string of the format "0.00:00:00.0000" where "0.01:35:11.0000" Would be 1 hour 35 minutes and 11 seconds.
+- TimeProperty: (Optional) The property to base the time off of. If nothing is specified this will default to the current UTC time. 
+- Window: (Required) The amount of time that must have passed before the Observer will broadcast again. Window is represented in JSON as a string of the format "0.00:00:00.0000" where "0.01:35:11.0000" Would be 1 hour 35 minutes and 11 seconds.
 
 For Example: 
 

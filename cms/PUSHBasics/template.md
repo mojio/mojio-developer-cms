@@ -29,7 +29,7 @@ To play around with our Push API check out our [swagger documentation](https://p
 
 **Subject**: The Id of the entity that is being observed. If an entity Id is not passed in when creating an observer it will broadcast changes for all entities of that type that the user has read permissions for.  If an Id is passed in it becomes the Subject on the observer. This is automatically set on creation and cannot be edited.
 
-**Key**: (Required) The only required field when creating an observer is the Key. The Key must be unique for the user, application and entity and cannot be edited.
+**Key**: (Required) The only required field when creating an observer is the Key. This value is something which you will create and is used for you to uniquely identify your observer; it must be unique for the user, application and entity.  It cannot be edited.
 
 **Fields**: The Fields property specifies what fields of the entity will be broadcast when a change occurs. When creating or updating an Observer passing in an empty array will default to all fields the user has permission for. If an Observer's Fields property is set to null or an empty array it will automatically broadcast all of the entity's fields.
 
