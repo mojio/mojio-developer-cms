@@ -2,13 +2,26 @@
 
 [Purpose: Basic information the entities, the relationships and how it actually works]
 
+## How does it work? ##
+
+#### How do you Connect a Mojio to a Vehicle? ####
+It's easy. Mojio plugs into a vehicle's [On-board Diagnostic (OBD) port](https://en.wikipedia.org/wiki/On-board_diagnostics), which is located under the dash usually within 24 inches (60 cm) of the steering wheel on the driver's side. Mojio uses machine-to-machine (M2M) cellular data exchange to send and receive data to and from a vehicle in *near* real time. That data is "translated" and fed to an app on a smart phone through our REST API, providing information about the vehicle and its status. 
+
+#### How does Mojio Connect to the Internet? ####
+
+Mojio connects to the Internet through an always-on cellular connection inside the Mojio that is plugged into a Vehicle. This allows for a seamless experience and is important because Mojio makes the car the device that is connected to the Internet directly (not a smart phone). Through this always-on connection, among other advantages, you know where your Vehicle is at any moment.
+
+#### Where will Mojio be available? ####
+Mojio works in most Vehicles built after 1995 and will connect to select cellular networks as we roll out across the world. Currently, we are available in the US and Canada. For more information on when Mojio will be available in your country, please contact us at [info@moj.io](info@moj.io).
+
+
 ## What is Mojio? ##
  
-#### The Mojio platform consists of 3 Main entities, Mojios , Vehicles, Trips. ####
+#### The Mojio platform consists of 3 Main entities, Mojios, Vehicles, Trips. ####
 
-* A Mojio installs in a Vehicle
+* A Mojio is installed into a Vehicle
 * A Vehicle generates Trips.
-* A Trip is made up of snapshots of a Vehicle at different points in time.
+* A Trip is made up of snapshots of a Vehicle at different points in time, typically bounded by an Ignition On and Ignition Off event.
 
 #### There are also Users, Groups... ####
 
@@ -32,26 +45,13 @@
 
 #### Relationships:  ####
 
-* A Mojio to Vehicle is typically 1 to 1.
-* A Mojio will have zero-to-many Trips.
-* A Vehicle will have zero-to-many Trips.
-* A Trip will have 1 or more snap shots of a vehicle
-* Mojio, Vehicle and Trip all have an Owner. 
-* Groups will have zero-to-many Users
-* Mojios, Vehicles and Users can have zero-to-many Groups that have access to their information
-
-
-## How does it work? ##
-
-#### How do you Connect a Mojio to a Vehicle? ####
-It's easy. Mojio plugs into a vehicle's OnBoard Diagnostic (OBD) port, which is located under the dash usually within 24 inches of the steering wheel on the driver's side. Mojio uses machine-to-machine (M2M) cellular data exchange to send and receive data to and from a vehicle in real time. That data is "translated" and fed to an app on a smartphone, providing information about the vehicle and its status. 
-
-#### How does Mojio Connect to the internet? ####
-
-Mojio connects to the Internet through an always-on cellular connection inside the Mojio that is plugged into a vehicle. This allows for a seamless experience and is important because Mojio makes the car the device that is connected to the Internet directly (not a smartphone). Through this always-on connection, among other advantages, you know where a vehicle is at any moment.
-
-#### Where will Mojio be available? ####
-Mojio works in most cars built after 1995 and will connect to select cellular networks as we roll out across the world. Currently, we are available in the US and Canada. For more information on when Mojio will be available in your country, please contact us at info@moj.io.
+* A Mojio to Vehicle is typically *one-to-one*.
+* A Mojio will have *zero-to-many* Trips.
+* A Vehicle will have *zero-to-many* Trips.
+* A Trip will have *one or more* snapshots of a vehicle
+* Mojio, Vehicle and Trip all have *one* Owner. 
+* Groups will have *zero-to-many* Users
+* Mojios, Vehicles and Users can have *zero-to-many* Groups that have access to their information
 
 
 ## Next Steps ##
