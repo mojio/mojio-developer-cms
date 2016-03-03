@@ -5,7 +5,7 @@ Our client SDKs are 100% open source. Documentation and specifics for each SDK c
 | Language      | Github                                     | 
 | ------------- | ------------------------------------------ |
 | Android       | https://github.com/mojio/mojio-android-sdk |
-| C#      	    | https://github.com/mojio/Mojio.Client      |
-| iOS 		    | https://github.com/mojio/mojio-ios-sdk     |
+| C#            | https://github.com/mojio/Mojio.Client      |
+| iOS           | https://github.com/mojio/mojio-ios-sdk     |
 | JavaScript    | https://github.com/mojio/mojio-js          |
 | PHP           | https://github.com/mojio/mojio-php-client  |
