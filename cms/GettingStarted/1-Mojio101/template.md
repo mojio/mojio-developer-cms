@@ -1,6 +1,5 @@
 # Mojio 101 
 
-[Purpose: Basic information the entities, the relationships and how it actually works]
 
 ## How does it work? ##
 
