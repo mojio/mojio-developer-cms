@@ -3,9 +3,9 @@ Permissions on the Mojio Platform allows a user to grant groups of users access 
 
 To grant a group of users access to a resource:
 
-1. Create a new group ([POST v2/groups/](https://api.moj.io/swagger/ui/index#!/Groups/CRUD_PostGroup))
-2. Add to the group the user or users you want grant access to ([POST v2/groups/{id}/users](https://api.moj.io/swagger/ui/index#!/Groups/CRUD_PostGroupUsers))
-3. Grant the group access to the resource (POST v2/{resource/{id}/permissions}
+1. Create a new group ([POST v2/groups/](#/rest/REST/~2Fv2~2Fgroups/post))
+2. Add to the group the user or users you want grant access to ([POST v2/groups/{id}/users](#/rest/REST/~2Fv2~2Fgroups~2F{id}~2Fusers/post))
+3. Grant the group access to the resource ([POST v2/{resource/{id}/permissions}](#/rest/REST/~2Fv2~2F{resource}~2F{id}~2Fpermissions/post)
 
 
 All the major entities have a list of AccessRules on them.  This list of access rules indicates who can view what parts of the entity. Access to an entity can be granted to a user simply by adding their UserId to one of the groups whose GroupId appears in the entity's access rules.
@@ -79,7 +79,7 @@ So for example if I add the following access rule on a Vehicle any new Trips tha
 
 This inheritance does not apply to past entities. So if I grant you Read access to my Vehicle you cannot see any of my past trips unless I explicitly grant it to you, but any new trips my vehicle generates you will have read access for. 
 
-Deleting permissions from a resource removes access to them. (DELETE v2/{resource}/{id}/permissions)
+Deleting permissions from a resource removes access to them. ([DELETE v2/{resource}/{id}/permissions](#/rest/REST/~2Fv2~2F{resource}~2F{id}~2Fpermissions/delete))
 
 Revoking access does not revoke it for all the children. For example if I change your access to my vehicle from Read to None the trips that were generated while you had Read access will still be view able, unless I explicitly revoke your access to each one individually. 
 
