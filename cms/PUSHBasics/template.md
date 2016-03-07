@@ -1,6 +1,6 @@
 Observers can be used to monitor changes in Mojios, Vehicles and Users.
 
-To play around with our Push API check out our [swagger documentation](https://push.moj.io/swagger).
+To play around with the Push API [documentation](#/rest-list/PUSH/Configurations).
 
 	Observer
 	{

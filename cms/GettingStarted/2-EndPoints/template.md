@@ -1,5 +1,3 @@
-[Purpose: More Technical overview of the APIs]
-
 You, as a developer, can connect to the Mojio Platform through our [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) and PUSH APIs to build your very own connected car apps.  We at Mojio use the very same APIs to build our own apps so you can rest assured that they are battle tested and ready!
 
 ### API Endpoints ###

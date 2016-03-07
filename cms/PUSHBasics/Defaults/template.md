@@ -4,6 +4,8 @@ You can create, update and delete default transports of each type for an applica
 
 All of the fields that can be set on a normal Transport can have a default (See the [Transport documentation](#/content/cms.PUSHBasics.Transports) for more information). Each transport type can only have one default.
 
+Check out the default endpoint in our [PUSH configuration documentation](#/rest-list/PUSH/Configurations)
+
 If a field is not set on an Observer's transport it will automatically look for a default transport for that app and if one is found be set to that of the default.
 
 Example:
