@@ -3,7 +3,7 @@
   "icon": "fa-file-o",
   "status": "collapse",
   "title": "SDKs",
-  "description": " Coming soon...",
+  "description": "Get started with Mojio using the platform of your choice",
   "breadcrumbs": true,
   "templateURI": "~/template.md",
   "templateType": "markdown",
