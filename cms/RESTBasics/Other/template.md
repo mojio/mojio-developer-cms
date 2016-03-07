@@ -1,8 +1,16 @@
-You can play with the REST API at [https://api.moj.io/swagger](https://api.moj.io/swagger).
-
+You can play with the API in the [REST API] section(#/rest-list/REST/Apps).
 ​
 ### Querying ###
-Following Odata protocol for filtering
+
+You can filter and sort any sets of results that are returned. These are included as query parameters on the URL
+
+Example:
+
+	https://api.moj.io/v2/vehicles?$filter=Name eq 'BatMobile'&$orderby=CreatedOn
+
+** ***Make sure the query is URL encoded***
+
+Filtering loosely follows the Odata protocol.
 ​
 The comparisons that we support are:
 ​

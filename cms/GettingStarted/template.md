@@ -1,6 +1,3 @@
-
-[Purpose: Non technical introduction]
-
 We'll walk you through the basics of the Mojio Platform so you can get started building your very own connected car apps! We at Mojio use this very same API to build our own apps.
 
 ### The Ground Rules ###
