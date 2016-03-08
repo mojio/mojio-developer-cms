@@ -104,17 +104,27 @@ Used to setup streaming to a MQTT instance.
 
 ### SignalR ###
 Connect to SignalR and broadcast messages.
-	
-	"Transport"{
-	   "TransportType": "SignalR",
-	   "ClientId": "string"
-	   "HubName":"string",
-	   "Callback": string
-	}
 
-**ClientId** (Required): The Id of the client to connect to.
+The signalR endpoint is https://push.moj.io/signalr.  The available hubs are **VehicleHub** and **MojioHub**, with two possible methods to invoke on each.  You must send a valid access token through the **Authorization** header, or via query parameter in order to authorize every signalR method.
 
-**HubName** (Required): The name of the hub to connect to.
+##### Available Methods #####
+**Observe** (Guid id, string key = null, string callback = null, string[] fields)
+ * ID is the specific vehicle or Mojio you wish to observe (depending on the hub)
+ * KEY is optional descriptor for the observer.  [Default: "signalr-observer-one-{ID}"]
+ * CALLBACK is the SignalR event callback invoked on new message. [Default: "[Vehicle|Mojio]{KEY}"]
+ * FIELDS is an array of fields to send.  [Default: ALL fields will be sent]
+   
+**ObserveAll** (string where = null, string key = null, string callback = null, string[] fields)
+ * WHERE is the filter condition that must match in order to fire the observer.
+ * KEY is optional descriptor for the observer.  [Default: "signalr-observer-all-[Mojio|Vehicle]s"]
+ * CALLBACK is the SignalR event callback invoked on new message. [Default: "[Vehicle|Mojio]{KEY}"]
+ * FIELDS is an array of fields to send.  [Default: ALL fields will be sent]
 
-**Callback** (Optional): The callback to be used for a response.
+##### Example Usage #####
+    hub = client.getHub("VehicleHub");
+    hub.qs = { "MojioAPIToken": "my-access-token" }
+    hub.Observe(vehicleId, "my-custom-signalr", "customCallback", ["Name", "Speed"])
+    hub.on("customCallback", function(vehicle) {
+        // I have a vehicle update!  whoooh
+    });
 
