@@ -189,7 +189,7 @@ In this case, your client id, or secret is probably incorrect.  App Id is the sa
 
 ## {"error":"unsupported_grant_type"} ##
 
-In this case, check the "grant_type" parameter, It must be set to "password"
+In this case, check the "grant_type" parameter, It must be set to "password", "code", or "refresh_token" depending on the method of authentication you wish to perform.
 
 
 
