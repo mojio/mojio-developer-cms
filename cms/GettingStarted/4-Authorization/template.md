@@ -162,3 +162,34 @@ RESPONSE:
       "expires_in"    : "43200",
       "refresh_token" : "********-****-****-****-************",
     }
+
+# Known Issues #
+
+
+## 404 eh! ##
+
+This means you probably have the wrong URL in your request.  Double check the URLs as described above.
+
+
+
+## error: redirect_uri_mismatch ##
+error_description: The redirect URI in the request did not match a registered redirect URI.
+
+In this case you will need to double check your "redirect_uri", make sure you used the same URI you setup in your App using the developer center.
+
+## "error": "access_denied" ##
+
+{
+"error": "access_denied"
+"error_description": "Invalid client credentials."
+}
+
+In this case, your client id, or secret is probably incorrect.  App Id is the same as the Client Id.  It is the Id that was automatically created for you when you created your application.
+
+
+## {"error":"unsupported_grant_type"} ##
+
+In this case, check the "grant_type" parameter, It must be set to "password"
+
+
+
