@@ -104,7 +104,7 @@ INITIAL REQUEST:
 
 INITIAL RESPONSE:
 
-    https://my.moj.io/#access_token=********-****-****-****-************&token_type=bearer&expires_in=43200
+    https://my.moj.io/?code=********-****-****-****-************
 
 SECONDARY REQUEST:
 
