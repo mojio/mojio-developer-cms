@@ -1,4 +1,4 @@
-## Getting Started ##
+## Overview ##
 
 The push observers provide a mechanism to register for realtime notifications of changes to a Mojio, vehicle, or user.  Observers can be configured to trigger on every update or only when specific conditions are met.  Timing intervals, and debouncing rules can also be used to refine how often data is sent. 
 
@@ -6,13 +6,13 @@ There are two main concepts to creating and managing observers.  First is the cr
 
 ### Getting Started ###
 
-The push APIs are separate from the standard REST API.  Instead all requests should be sent to https://push.moj.io/. All requests will require a valid Authorization header bearer token (see [Authorization](#/content/cms.GettingStarted.4-Authorization)).
+The push APIs are separate from the standard REST API.  Instead all requests should be sent to `https://push.moj.io/`. All requests will require a valid Authorization header bearer token (see [Authorization](#/content/cms.GettingStarted.4-Authorization)).
 
 Visit the Push API [documentation](#/rest-list/PUSH/Configurations) to play around with the API.
 
 ### Creating an Observer ###
 
-To create or update an observer perform a PUT request to https://push.moj.io/v2/{resource}/{key}
+To create or update an observer, do a `PUT` request to `https://push.moj.io/v2/{resource}/{key}`. Except for a unique key, no fields are required to create an observer.  However, without any conditions, the observer will be triggered on ALL updates.
 
 #### Example Request ####
 ```
@@ -31,11 +31,11 @@ PUT https://push.moj.io/v2/vehicles/speeding
 
 #### Fields ####
 
-To save on bandwidth, a subset of fields to be transmitted can be defined.  Leave this empty to receive the full stream.
+To save on bandwidth a subset of fields can be specified.  Only top level properties are allowed for the time being (ex: `Location`, but not `Location.Lat`).  Leave this empty to receive the full stream.
 
 #### Conditions ####
 
-A condition string to filter notifications by.  Example: "Speed.Value gt 50"
+A condition string to filter notifications by. These conditions follow the same string format the API's filtering mechanism. Example: "Speed.Value gt 50"
 
 #### Timing ####
 
@@ -58,11 +58,11 @@ A vehicle can send a lot of data as it's driving.  There is a good chance you do
 
 #### TimeToLive ####
 
-Dispite our best efforts to always provide realtime vehicle data, the reality is, sometimes communication can be delayed.  If the notification only makes sense when it's in realtime, a TimeToLive can be set to ignore out-dated messages.
+Dispite our best efforts to always provide realtime vehicle data, the reality is sometimes communication can be delayed.  If the notification only makes sense when it's in realtime, a TimeToLive can be set to ignore out-dated messages.
 
 ### Transports ###
 
-Once you have conditions set for your observer, you can add one or more transports.  Each transport has different set of properties specific, and rules around validation and cleanup.
+Once you have conditions set for your observer, you can add one or more transports.  Each transport has different set of properties specific, and rules around validation and cleanup.  See transports page for details.
 
 - Android
 	- Send push notifications to Android Devices
