@@ -15,7 +15,7 @@ Visit the Push API [documentation](#/rest-list/PUSH/Configurations) to play arou
 To create or update an observer perform a PUT request to https://push.moj.io/v2/{resource}/{key}
 
 #### Example Request ####
-```json
+```
 PUT https://push.moj.io/v2/{resource}/{key}
 {
   "Fields": [
@@ -24,7 +24,7 @@ PUT https://push.moj.io/v2/{resource}/{key}
   "Conditions": "Speed gt 50",
   "Debounce": 4,
   "Throttle": "15:00",
-  "Timing": "High",    ["High","Change","Enter","Exit"]
+  "Timing": "High",
   "TimeToLive": "1:00"
 }
 ```
