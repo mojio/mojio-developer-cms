@@ -16,15 +16,15 @@ To create or update an observer perform a PUT request to https://push.moj.io/v2/
 
 #### Example Request ####
 ```
-PUT https://push.moj.io/v2/{resource}/{key}
+PUT https://push.moj.io/v2/vehicles/speeding
 {
   "Fields": [
     "Name", "Speed"
   ],
-  "Conditions": "Speed gt 50",
+  "Conditions": "Speed gt 70",
   "Debounce": 4,
   "Throttle": "15:00",
-  "Timing": "High",
+  "Timing": "Enter",
   "TimeToLive": "1:00"
 }
 ```
