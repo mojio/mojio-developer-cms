@@ -1,12 +1,12 @@
 ## Observer Templates ##
 
-More often than note, you will want to use the exact same observer rules for all customers.  Insteading of your application needing to create and manage the observers for every customer, you can use an observer template to define an observer for all customers at once.
+More often than not, you will want to use the exact same observer rules for all customers.  Insteading of your application needing to create and manage the observers for every customer, you can use an observer template to define an observer for all customers at once.
 
 ## Creating a Template ##
 
 Creating a template is very similar to creating an observer.  You just need to be logged in as an administrator of your application and then PUT to `https://push.moj.io/v2/configs/{my-app-id}/{resource}/{key}/`  
 
-You can also add an optional `?updateAll=true` parameter, if you wish to retroactively update all existing customer's observers based on this template.
+You can also add an optional `?updateAll=true` parameter if you wish to retroactively update all existing customer's observers based on this template.
 
 #### Example Setup ####
 
