@@ -6,13 +6,13 @@ There are two main concepts to creating and managing observers.  First is the cr
 
 ### Getting Started ###
 
-The push APIs are separate from the standard REST API.  Instead all requests should be sent to `https://push.moj.io/`. All requests will require a valid Authorization header bearer token (see [Authorization](#/content/cms.GettingStarted.4-Authorization)).
+The push APIs are separate from the standard REST API.  Instead all requests should be sent to `https://push.moj.io/`. All requests will require a valid bearer token in the Authorization header (see [Authorization](#/content/cms.GettingStarted.4-Authorization)).
 
 Visit the Push API [documentation](#/rest-list/PUSH/Configurations) to play around with the API.
 
 ### Creating an Observer ###
 
-To create or update an observer, do a `PUT` request to `https://push.moj.io/v2/{resource}/{key}`. Except for a unique key, no fields are required to create an observer.  However, without any conditions, the observer will be triggered on ALL updates.
+To create or update an observer, submit a `PUT` request to `https://push.moj.io/v2/{resource}/{key}`. Except for the unique key, no fields are required to create an observer.  However, without any conditions, the observer will be triggered on ALL updates (which could result in a lot of data being sent your way).
 
 #### Example Request ####
 ```
@@ -31,11 +31,11 @@ PUT https://push.moj.io/v2/vehicles/speeding
 
 #### Fields ####
 
-To save on bandwidth a subset of fields can be specified.  Only top level properties are allowed for the time being (ex: `Location`, but not `Location.Lat`).  Leave this empty to receive the full stream.
+To save on bandwidth a subset of fields can be specified.  Only top level properties are allowed at this time (ex: `Location`, but not `Location.Lat`).  Leave this empty to receive the full stream.
 
 #### Conditions ####
 
-A condition string to filter notifications by. These conditions follow the same string format the API's filtering mechanism. Example: "Speed.Value gt 50"
+A condition string to filter notifications by. These conditions follow the same string format the API's filtering mechanism. Example: "Speed.Value gt 50" or "Tags contains 'work-car' and FuelLevel.Value lt 20"
 
 #### Timing ####
 
