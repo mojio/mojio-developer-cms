@@ -21,7 +21,7 @@ PUT https://push.moj.io/v2/vehicles/speeding
   "Fields": [
     "Name", "Speed"
   ],
-  "Conditions": "Speed gt 70",
+  "Conditions": "Speed.Value gt 70",
   "Debounce": 4,
   "Throttle": "15:00",
   "Timing": "Enter",
@@ -35,7 +35,7 @@ To save on bandwidth a subset of fields can be specified.  Only top level proper
 
 #### Conditions ####
 
-A condition string to filter notifications by. These conditions follow the same string format the API's filtering mechanism. Example: "Speed.Value gt 50" or "Tags contains 'work-car' and FuelLevel.Value lt 20"
+A condition string to filter notifications by. These conditions follow the same string format the API's filtering mechanism. Example: `Speed.Value gt 50` or `Tags contains 'work-car' and FuelLevel.Value lt 20`
 
 #### Timing ####
 
@@ -60,9 +60,35 @@ A vehicle can send a lot of data as it's driving.  There is a good chance you do
 
 Dispite our best efforts to always provide realtime vehicle data, the reality is sometimes communication can be delayed.  If the notification only makes sense when it's in realtime, a TimeToLive can be set to ignore out-dated messages.
 
-### Transports ###
+## Transports ##
 
-Once you have conditions set for your observer, you can add one or more transports.  Each transport has different set of properties specific, and rules around validation and cleanup.  See transports page for details.
+Once you have conditions set for your observer, you can add one or more transports.  Each transport has different set of properties specific, and rules around validation and cleanup.  See transports page for details about specific transports.
+
+### Add a Transport ###
+
+To add a transport to an observer, perform a `PUT` or `POST` call to `https://push.moj.io/v2/{resource}/{key}/transports` with a transport `Type` and any corresponding fields for the transport type.
+
+#### Example Request ####
+
+```
+PUT https://push.moj.io/v2/vehicles/speeding/transports
+{
+  "Type": "HttpPost",
+  "Address": "https://example.com/test-me.php"
+}
+```
+
+### Delete a transport ###
+
+Once a transport has been created, an `Id` property will be returned for the transport.  This Id can be used to delete a transport from a observer by sending a `DELETE` request to `https://push.moj.io/v2/{reousrce}/{key}/transports?id={id}` or if you want to delete the transport from ALL observers, a `DELETE` request can be sent to `https://push.moj.io/v2/transports?id={id}`.
+
+#### Example Request ####
+
+```
+DELETE https://push.moj.io/v2/transports?id=https://example.com/test-me.php
+```
+
+### List of transports ###
 
 - Android
 	- Send push notifications to Android Devices
