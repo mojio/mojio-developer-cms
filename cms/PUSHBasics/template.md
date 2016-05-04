@@ -24,7 +24,7 @@ PUT https://push.moj.io/v2/vehicles/speeding
   "Conditions": "Speed.Value gt 70",
   "Debounce": 4,
   "Throttle": "15:00",
-  "Timing": "Enter",
+  "Timing": "Leading",
   "TimeToLive": "1:00"
 }
 ```
@@ -44,9 +44,9 @@ Based on the evaluation of a condition, Timing is used to determine if a notific
 | Timing | Description |
 |---|---|
 | High | Observer will trigger everytime the condition is met. This is the default behaviour. |
-| Change | Observer will fire when the condition evaluation changes (true to false, false to true) |
-| Enter | Observer will only fire when the condition changes from false to true. |
-| Exit | Observer will only fire when the condition changes from true to false. |
+| Edge | Observer will fire when the condition evaluation changes (true to false, false to true) |
+| Leading | Observer will only fire when the condition changes from false to true. |
+| Trailing | Observer will only fire when the condition changes from true to false. |
 
 #### Debounce ####
 
