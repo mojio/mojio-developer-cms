@@ -115,6 +115,17 @@ Used to setup streaming to a MQTT instance.
 **Password** (Optional): Password used when authenticating to the MQTT broker. 
 
 
+## Websockets ##
+
+There is a websocket implementation that hooks directly into the v2 API server.  Instead of hitting https://api.moj.io/v2/{resource}/{vehicle_id} to fetch a single state of a resource, a websocket connection can be opened to receive live updates to the resource.
+
+### Available Websocket Endpoints ###
+
+* wss://api.moj.io/v2/vehicles?filter={conditions}
+* wss://api.moj.io/v2/mojios?filter={conditions}
+* wss://api.moj.io/v2/vehicles/{vehicle_id}
+* wss://api.moj.io/v2/mojios/{mojio_id}
+
 ## SignalR ##
 
 Connect to SignalR and receive broadcasted messages.
