@@ -100,5 +100,7 @@ DELETE https://push.moj.io/v2/transports?id=https://example.com/test-me.php
 	- Stream data directly to your own [MongoDB](https://www.mongodb.org/) instance
 - Mqtt
 	- Stream data directly to your own [MQTT](http://mqtt.org/) instance
+- Websockets
+	- Stream JSON data over simple websockets.
 - SignalR
 	- Send push notifications to your browser via [SignalR](http://www.asp.net/signalr/overview/getting-started/introduction-to-signalr)
