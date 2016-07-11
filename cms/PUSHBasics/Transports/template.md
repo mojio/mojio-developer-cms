@@ -25,6 +25,7 @@ Used to set up notification for Apple devices on the [Apple Push Notification](h
 	"AlertBody": "string",
 	"AlertSound": "string",
 	"AlertCategory": "string",
+	"ContentAvailable": "bool",
 	"Badge": 0
 }
 ```
@@ -37,9 +38,9 @@ Used to set up notification for Apple devices on the [Apple Push Notification](h
 
 **AlertCategory** (Optional): Used to categorize the notification.
 
-**AlertBadge** (Optional): A number to badge the app icon with.
+**Badge** (Optional): A number to badge the app icon with.
 
-**AppId** (Required):  The Apple Application Id.
+**ContentAvailable** (Optional): Whether to include the content-available flag.
 
 
 ## HttpPost ##
