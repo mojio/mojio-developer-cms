@@ -19,7 +19,7 @@ Direct the user through a web browser or web view to the authorize endpoint: htt
 | Param | Description |
 |---|---|
 | response_type | Required. Must be set to **token** |
-| client_id | Required.  Your applications ID. |
+| client_id | Required.  Your application's ID. |
 | redirect_uri | Required. The URI to send the user once authorization has completed. |
 | scope | Optional. The possible scope of the request. |
 | state | Optional (recommended). Any client side state that will be maintained through to the response. |
@@ -79,8 +79,8 @@ Next, your server must exchange the **code** for a full access token using a POS
 | Param | Description |
 |---|---|
 | grant_type | Required. Must be set to **authorization_code** |
-| client_id | Required. Must be set to **code** |
-| client_secret | Required.  Your applications ID. |
+| client_id | Required.  Your application's ID. |
+| client_secret | Required.  Your application's Secret Key. |
 | code | Required. The authorization **code** received from the authorization server. |
 | redirect_uri | Required. Must match the redirect_uri sent in the previous request. |
 
@@ -131,8 +131,8 @@ Your server will need to obtain the user's credentials then send a POST to the t
 | Param | Description |
 |---|---|
 | grant_type | Required. Must be set to **password** |
-| client_id | Required. Must be set to **code** |
-| client_secret | Required.  Your applications ID. |
+| client_id | Required.  Your application's ID. |
+| client_secret | Required.  Your application's Secret Key. |
 | username | Required. The user's username or email address. |
 | password | Required. The user's password. |
 
