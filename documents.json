@@ -1,0 +1,36 @@
+[
+  {
+    "title":"section 1",
+    "submenu": [
+      {
+        "title":"file 1",
+        "file":"file1"
+      },
+      {
+        "title":"file 2",
+        "file":"file2"
+      },
+      {
+        "title":"file 3",
+        "file":"file3"
+      }
+    ]
+  },
+  {
+    "title":"section 2",
+    "submenu": [
+      {
+        "title":"file 4",
+        "file":"file4"
+      },
+      {
+        "title":"file 5",
+        "file":"file5"
+      },
+      {
+        "title":"file 6",
+        "file":"file6"
+      }
+    ]
+  }
+]
