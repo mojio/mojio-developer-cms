@@ -1,9 +1,0 @@
-{
-  "name": "mojio-developer-cms",
-  "version": "1.0.0",
-  "dependencies": {
-    "isotope": "*"
-  },
-  "devDependencies": {
-  }
-}
