@@ -1,19 +1,32 @@
 [
   {
-    "title":"section 1",
+    "title":"Get Started",
+    "file":"index",
     "submenu": [
       {
-        "title":"App Setup",
+        "title":"Register your App",
         "file":"app_setup"
       },
       {
-        "title":"file 3",
-        "file":"file3"
+        "title": "OAuth 2.0 basics",
+        "file":"doc_oauth"
+      },
+      {
+        "title":"REST and PUSH APIs",
+        "file":"doc_apis"
+      },
+      {
+        "title":"SDKs",
+        "file":"file5"
+      },
+      {
+        "title":"Getting Help",
+        "file":"file6"
       }
     ]
   },
   {
-    "title":"Endpoints",
+    "title":"iOS Quickstart",
     "submenu": [
       {
         "title":"file 4",
@@ -30,7 +43,41 @@
     ]
   },
   {
-    "title":"Measures",
+    "title":"Android Quickstart",
+    "submenu": [
+      {
+        "title":"file 4",
+        "file":"file4"
+      },
+      {
+        "title":"file 5",
+        "file":"file5"
+      },
+      {
+        "title":"file 6",
+        "file":"file6"
+      }
+    ]
+  },
+  {
+    "title":"Javascript Quickstart",
+    "submenu": [
+      {
+        "title":"file 4",
+        "file":"file4"
+      },
+      {
+        "title":"file 5",
+        "file":"file5"
+      },
+      {
+        "title":"file 6",
+        "file":"file6"
+      }
+    ]
+  },
+  {
+    "title":".Net Quickstart",
     "submenu": [
       {
         "title":"file 4",
@@ -46,5 +93,6 @@
       }
     ]
   }
+
 
 ]

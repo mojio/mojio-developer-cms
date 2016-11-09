@@ -1,5 +1,6 @@
 
 # Authentication #
+Some endpoints require an authorized user in order to make API calls. 
 Many of the API calls require an authorized user to be associated with the SDK requests. After a user successfully logs in a Token object will be returned that contains a token id (GUID), which must be sent in all subsequent HTTP request headers in the field "MojioAPIToken".
 
 Before tokens are either for the Sandbox or Production environment, but the Sandbox environment has been deprecated so now there is just one environment.
