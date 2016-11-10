@@ -58,18 +58,23 @@
   },
   {
     "title":"Javascript Quickstart",
+    "file":"doc_js",
     "submenu": [
       {
-        "title":"file 4",
-        "file":"file4"
+        "title":"Client and Server Authentication",
+        "file":"doc_js_auth"
       },
       {
-        "title":"file 5",
-        "file":"file5"
+        "title":"Fetching Data",
+        "file":"doc_js_fetch"
       },
       {
-        "title":"file 6",
-        "file":"file6"
+        "title":"Websocket PUSH",
+        "file":"doc_js_ws"
+      },
+      {
+        "title":"HTTP PUSH",
+        "file":"doc_js_http"
       }
     ]
   },

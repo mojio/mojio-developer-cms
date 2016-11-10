@@ -1,4 +1,4 @@
-# Mojio Android SDK #
+# Android SDK #
 
 This describes the Java SDK for integrating with the Mojio platform. This SDK may be used for server side development or for Android.
 
