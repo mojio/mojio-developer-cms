@@ -8,11 +8,11 @@
         "file":"app_setup"
       },
       {
-        "title": "OAuth 2.0 basics",
+        "title": "OAuth 2.0 Authentication",
         "file":"doc_oauth"
       },
       {
-        "title":"REST and PUSH APIs",
+        "title":"APIs Overview",
         "file":"doc_apis"
       },
       {
