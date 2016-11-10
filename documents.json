@@ -17,11 +17,11 @@
       },
       {
         "title":"SDKs",
-        "file":"file5"
+        "file":"doc_sdks"
       },
       {
         "title":"Getting Help",
-        "file":"file6"
+        "file":"doc_help"
       }
     ]
   },
@@ -44,18 +44,15 @@
   },
   {
     "title":"Android Quickstart",
+    "file": "doc_android",
     "submenu": [
       {
-        "title":"file 4",
-        "file":"file4"
+        "title":"Model classes",
+        "file":"doc_android_model"
       },
       {
-        "title":"file 5",
-        "file":"file5"
-      },
-      {
-        "title":"file 6",
-        "file":"file6"
+        "title":"REST API access",
+        "file":"doc_android_rest"
       }
     ]
   },
