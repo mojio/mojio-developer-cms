@@ -27,18 +27,15 @@
   },
   {
     "title":"iOS Quickstart",
+    "file":"doc_ios",
     "submenu": [
       {
-        "title":"file 4",
-        "file":"file4"
+        "title":"Authentication",
+        "file":"doc_ios_auth"
       },
       {
-        "title":"file 5",
-        "file":"file5"
-      },
-      {
-        "title":"file 6",
-        "file":"file6"
+        "title":"Fetching Data",
+        "file":"doc_ios_fetch"
       }
     ]
   },
