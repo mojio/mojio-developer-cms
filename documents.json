@@ -14,14 +14,6 @@
       {
         "title":"APIs Overview",
         "file":"doc_apis"
-      },
-      {
-        "title":"SDKs",
-        "file":"doc_sdks"
-      },
-      {
-        "title":"Getting Help",
-        "file":"doc_help"
       }
     ]
   },
@@ -74,24 +66,5 @@
         "file":"doc_js_http"
       }
     ]
-  },
-  {
-    "title":".Net Quickstart",
-    "submenu": [
-      {
-        "title":"file 4",
-        "file":"file4"
-      },
-      {
-        "title":"file 5",
-        "file":"file5"
-      },
-      {
-        "title":"file 6",
-        "file":"file6"
-      }
-    ]
   }
-
-
 ]
