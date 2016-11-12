@@ -41,7 +41,7 @@ Many of our API calls require an authorized user to be associated with the SDK r
 ### Using the Refresh Token ###
 Token will expire after 12 hours. To receive new token:
 ```
-        mojio_client.refreshToken();
+mojio_client.refreshToken();
 ```
 
 ### Storing tokens ###
