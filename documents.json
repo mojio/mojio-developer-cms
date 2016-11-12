@@ -14,6 +14,10 @@
       {
         "title":"APIs Overview",
         "file":"doc_apis"
+      },
+      {
+        "title":"Getting Help",
+        "file" : "getting_help"
       }
     ]
   },

@@ -20,7 +20,7 @@ You will need a Mojio account in order to use the Mojio APIs
 
 In order to set up an App:
 
-* Browse to https://developer.moj.io/myapp
+* Browse to [https://docs.moj.io/#/myapp/](https://docs.moj.io/#/myapp/)
 * If you are not logged in, you will be prompted to log in
 * Give your new App a name and click "Create"
 * Your app should now show up in the apps list
