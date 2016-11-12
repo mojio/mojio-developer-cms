@@ -1,3 +1,3 @@
 # Getting Help #
 
-Mojio has a Gitter channel where our engineers hang out and provide assistance. You can access it at [https://gitter.im/mojio/general](https://gitter.im/mojio/general)
+Mojio has a number of Gitter channels where our engineers hang out and provide assistance. You can access them at [https://gitter.im/orgs/mojio/rooms](https://gitter.im/orgs/mojio/rooms)

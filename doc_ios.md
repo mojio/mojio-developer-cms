@@ -3,7 +3,7 @@
 
 Add MojioSDK as a pod to your Podfile
 ```
-pod 'MojioSDK'
+pod ‘MojioSDK', :git => 'https://github.com/mojio/mojio-ios-sdk', :branch => ‘master'
 ```
 Install or update your Pods
 ```
