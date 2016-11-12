@@ -43,7 +43,7 @@ The redirect_uri is a url where the authentication server will return with a tok
 
 You may list more than one URI in your app settings by putting them on separate lines.
 
-On the the page that handles the redirect back from authentication, you must retrieve the authentication token. To do this in JavaScript use:
+On the page that handles the redirect back from authentication, you must retrieve the authentication token. To do this in JavaScript use:
 
 ```
 match = document.location.hash.match(/access_token=([0-9a-f-]{36})/)
