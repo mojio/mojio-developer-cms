@@ -1,6 +1,6 @@
 # APIs Overview #
 
-Mojio providers two types of APIs for your application. A REST API and a PUSH API.
+Mojio provides two types of APIs for your application. A REST API and a PUSH API.
 
 The REST API is good for request-response type problems. For example, you would use this if you are interested in the current status of a Vehicle. If, however, you are looking for an event on the Vehicle, constantly polling for changes on the Vehicle record is inefficient. The PUSH API is better suited for this.
 

@@ -1,6 +1,6 @@
 # Simulator #
 
-You can't always hop in your car and drive around whenever you want to test your applications so we have a vehicle simulator to do the hard work for you. Even if you don't have a Mojio you can easily test out your application. 
+You can't always hop in your car and drive around whenever you want to test your applications, so we have a vehicle simulator to do the hard work for you. Even if you don't have a Mojio you can easily test out your application. 
 
 We have two different simulators for you to work with. Use the basic Simulator for now. We have an alpha version of a multi-vehicle simulator which you can use if you are feeling adventurous.
 
