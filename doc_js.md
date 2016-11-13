@@ -42,7 +42,7 @@ Once you have included the SDK, connecting to our API is as simple as:
 
 First you will want to download SDK libraries. Once you have downloaded and included the SDK, connecting to our API is as simple as:
 ```
-var MojioClientLite= require("MojioClientLite");
+var MojioClientLite= require("mojio-client-lite");
 
 var config = {
     application: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
