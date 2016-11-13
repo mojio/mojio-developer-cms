@@ -1,0 +1,74 @@
+[
+  {
+    "title":"Get Started",
+    "file":"index",
+    "submenu": [
+      {
+        "title":"Register your App",
+        "file":"app_setup"
+      },
+      {
+        "title": "OAuth 2.0 Authentication",
+        "file":"doc_oauth"
+      },
+      {
+        "title":"APIs Overview",
+        "file":"doc_apis"
+      },
+      {
+        "title":"Getting Help",
+        "file" : "getting_help"
+      }
+    ]
+  },
+  {
+    "title":"iOS Quickstart",
+    "file":"doc_ios",
+    "submenu": [
+      {
+        "title":"Authentication",
+        "file":"doc_ios_auth"
+      },
+      {
+        "title":"Fetching Data",
+        "file":"doc_ios_fetch"
+      }
+    ]
+  },
+  {
+    "title":"Android Quickstart",
+    "file": "doc_android",
+    "submenu": [
+      {
+        "title":"Model classes",
+        "file":"doc_android_model"
+      },
+      {
+        "title":"REST API access",
+        "file":"doc_android_rest"
+      }
+    ]
+  },
+  {
+    "title":"Javascript Quickstart",
+    "file":"doc_js",
+    "submenu": [
+      {
+        "title":"Client and Server Authentication",
+        "file":"doc_js_auth"
+      },
+      {
+        "title":"Fetching Data",
+        "file":"doc_js_fetch"
+      },
+      {
+        "title":"Websocket PUSH",
+        "file":"doc_js_ws"
+      },
+      {
+        "title":"HTTP PUSH",
+        "file":"doc_js_http"
+      }
+    ]
+  }
+]

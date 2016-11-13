@@ -1,2 +1,0 @@
-
-Enjoy exploring our APIs, SDKs and documentation. Please contact us at [support.moj.io](http://mailto:support@moj.io?subject=Developer%20Center "support@moj.io") if you have any comments or concerns. 
