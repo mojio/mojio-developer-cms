@@ -1,4 +1,4 @@
-# OAuth 2.0 Authorization#
+# Authentication#
 
 Every Mojio API call must be properly authorized by a bearer token sent in the Authorization header.
 
