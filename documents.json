@@ -8,8 +8,8 @@
         "file":"app_setup"
       },
       {
-        "title": "OAuth 2.0 Authentication",
-        "file":"doc_oauth"
+        "title": "Authentication",
+        "file":"doc_auth"
       },
       {
         "title":"APIs Overview",
