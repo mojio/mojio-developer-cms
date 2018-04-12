@@ -9,7 +9,7 @@ The PUSH API follows the observer model where you register the event or conditio
 The PUSH API supports the following transports for receiving push notifications
 
 - Apple Push Notification (APN for iOS)
-- Google Cloud Messaging (GCM for Andorid)
+- Google Cloud Messaging (GCM for Android)
 - WebSockets
 - HTTP POST 
 - Azure Event Hubs
