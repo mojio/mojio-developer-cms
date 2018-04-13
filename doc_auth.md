@@ -35,18 +35,17 @@ The response will be returned via the redirect_uri with paramaters passed as a U
 | scope | The final scope of the access token. |
 | state | Same value that was passed in through the request. |
 
-On success, you'll be redirected to the uri you provided above:
-(https://redirect_uri#access_token=ACCESS_TOKEN&token_type=Bearer&expires_in=86400&scope=full%20offline_access)
+On success, you'll be redirected to the uri you provided above.
 
 ##### Example #####
 
 REQUEST:
 
-    Update example
+    https://identity.moj.io/connect/authorize?&response_type=token&redirect_uri=REGISTERED_REDIRECT_URIS&client_id=APPLICATION_ID&scope=full
 
 RESPONSE:
 
-    Update example
+    https://redirect_uri#access_token=ACCESS_TOKEN&token_type=Bearer&expires_in=86400&scope=full
     
 
 ### Authorization Code ###
@@ -98,19 +97,30 @@ Upon success, you'll receive the token and the refresh token:
 
 INITIAL REQUEST:
 
-    Update example
+    https://identity.moj.io/connect/authorize?&response_type=code&redirect_uri=REGISTERED_REDIRECT_URI&client_id=APPLICATION_ID&scope=full
 
 INITIAL RESPONSE:
 
-    Update
+    https://redirect_uri?code=CODE&scope=full
 
 SECONDARY REQUEST:
 
-    Update
+    [POST] https://identity.moj.io/connect/token
+    (x-www-form-urlencoded)
+    client_id:APPLICATION_ID
+    client_secret:APPLICATION_SECRET
+    grant_type:authorization_code
+    code:CODE_FROM_INITIAL_RESPONSE
+    redirect_uri:REGISTERED_REDIRECT_URI
     
 SECONDARY RESPONSE:
 
-    Update
+    {
+    	"access_token": "ACCESS_TOKEN",
+    	"expires_in": 86400,
+    	"token_type": "Bearer",
+    	"refresh_token": "REFRESH_TOKEN"
+    }
     
 
 # Known Issues #
