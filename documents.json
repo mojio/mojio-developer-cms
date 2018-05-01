@@ -4,21 +4,17 @@
     "file":"index",
     "submenu": [
       {
-        "title":"Register your App",
-        "file":"app_setup"
+        "title":"Choose Your Grant Type",
+        "file":"grant_type"
       },
       {
         "title": "Authentication",
         "file":"doc_auth"
       },
       {
-        "title":"APIs Overview",
+        "title":"About Our APIs",
         "file":"doc_apis"
       },
-      {
-        "title":"Getting Help",
-        "file" : "getting_help"
-      }
     ]
   },
   {
